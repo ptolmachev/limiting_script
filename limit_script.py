@@ -72,7 +72,8 @@ while True:
         # reset
         curr_day = get_curr_day()
         current_balance = reset_balance(max_balance, uselog, curr_day)
-
+        prev_midnight = find_midnight_before()
+        
     pids = get_pids(apps)
 
     if len(pids) != 0:
